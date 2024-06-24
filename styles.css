@@ -1,0 +1,86 @@
+:root {
+    --yellow:hsl(47, 88%, 63%);
+    --grey:hsl(0, 0%, 50%);
+    --black:hsl(0, 0%, 7%);
+    --white:hsl(0, 0%, 100%);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Figtree", sans-serif;
+}
+
+/* img {
+    width: 100%;
+} */
+
+h1, h2, p {
+    margin: 0;
+}
+
+body {
+    height: 100dvh;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--flow-space, 1rem);
+    padding: 2rem;
+    font-size: 16px;
+    background-color: var(--white);
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 0px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 0px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 0px -3px rgba(0,0,0,0.75);
+}
+
+.main__tag {
+    background-color: var(--yellow);
+    display: inline-block;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    align-self: flex-start;
+
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h1:hover {
+    transition: all 0.5s;
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.main__date {
+    color: var(--black);
+    font-weight: 600;
+}
+
+.main__description {
+    color: var(--grey);
+}
+
+.main__avatar {
+    display: flex;
+    align-items: center;
+    gap: var(--flow-space, 1rem);
+    font-weight:600;
+
+}
+
+.main__avatar img {
+    width: 40px;
+}
